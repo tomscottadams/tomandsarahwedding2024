@@ -112,7 +112,84 @@
 <hr>
 
 <footer>
+
+
   <div class="container">
+    <div class="row">      
+      <div class="col-md-3" style="text-align:center">
+          <h2 class="section-heading" id="cdD">00</h2>
+      </div>
+      <div class="col-md-3" style="text-align:center">
+          <h2 class="section-heading" id="cdH">00</h2>
+      </div>
+      <div class="col-md-3" style="text-align:center">
+          <h2 class="section-heading" id="cdM">00</h2>
+      </div>
+      <div class="col-md-3" style="text-align:center">
+          <h2 class="section-heading" id="cdS">00</h2>
+      </div>
+
+
+
+    <div class="col-md-3" style="text-align:center"> 
+        Days
+    </div>                    
+    <div class="col-md-3" style="text-align:center"> 
+        Hours
+    </div>
+    <div class="col-md-3" style="text-align:center"> 
+        Minutes
+    </div>
+    <div class="col-md-3" style="text-align:center"> 
+        Seconds
+    </div>
+</div>
+
+
+
+  
+    <script>
+      // Change the value of countDownEndDate to the day you want to end the count down
+      var countDownEndDate = "August 9, 2024 13:30:00";
+      
+      var endDate = new Date(countDownEndDate).getTime();
+      
+      var x = setInterval(function() {
+      
+        var timeNow = new Date().getTime();
+      
+        var timeLeft = endDate - timeNow;
+      
+        var days    = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        var hours   = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+  
+        if(days < 10) {
+          days = "0" + days;
+        }
+  
+        if(hours < 10) {
+          hours = "0" + hours;
+        }
+  
+        if(minutes < 10) {
+          minutes = "0" + minutes;
+        }
+  
+        if(seconds < 10) {
+          seconds = "0" + seconds
+        }
+
+
+        if (timeLeft > 0) {
+          document.getElementById("cdD").innerHTML = days;
+          document.getElementById("cdH").innerHTML = hours;
+          document.getElementById("cdM").innerHTML = minutes;
+          document.getElementById("cdS").innerHTML = seconds;
+        }
+      }, 1000);
+    </script>
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <ul class="list-inline text-center">

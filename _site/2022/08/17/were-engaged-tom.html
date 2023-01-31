@@ -75,7 +75,7 @@
             <span class="meta">
               August 17, 2022 &middot; <span class="reading-time" title="Estimated read time">
   
-   4 mins  read </span>
+   5 mins  read </span>
 
             </span>
           </div>
@@ -102,11 +102,11 @@
     
 <p>I had to quickly lie on the spot to Sarah, "you can't stay here for this, you'll need to go and sit over there! It'll take ages!", as I point to the furthest away bench. Greg, the security man (yes, I remembered his name), put on his rubber gloves and started rummaging. I leaned over and whispered, "there’s an engagement ring in there" and he 100% understood the assignment:</p>
 
-<p>"Where is she?"</p>
+<blockquote class="blockquote">"Where is she?"</blockquote>
 
 <p>I subtly point to Sarah...</p>
 
-<p>"No problem"</p>
+<blockquote class="blockquote">"No problem"</blockquote>
 
 <p>He places my bag on the floor and empties it behind the counter, what a bloke. Once Greg was satisfied I wasn't a threat to national security, we headed on our way to Orlando.</p>
 
@@ -122,13 +122,17 @@
 
 <p>I hadn't anticipated that Sarah would take about thirty photos, the wait was agonising, I looked over at the lone man, who had noticed what was happening, and we both shrugged "is she ever going to turn around?".</p>
 
-<p>Soon enough, however, she did. And I asked "Will you marry me?".</p>
+<p>Soon enough, however, she did. And I asked:</p>
+
+<blockquote class="blockquote">"Will you marry me?"</blockquote>
 
 <p>In my head I had expected an ecstatic "YES" like you see in the films. But not Sarah, I won't publish her response, but it began with an "F".</p>
 
 <p>She did eventually say yes though.</p>
 
+<p>A couple of minutes later, the lone man wandered over and congratulated us, his name was Joshua and he told us about his own wedding in the coming November (Hope it all went well!)</p>
 
+<p>He took our picture (above, left) and went on his way, we continued our walk around the lake.</p>
 
 
 
@@ -157,7 +161,84 @@
 <hr>
 
 <footer>
+
+
   <div class="container">
+    <div class="row">      
+      <div class="col-md-3" style="text-align:center">
+          <h2 class="section-heading" id="cdD">00</h2>
+      </div>
+      <div class="col-md-3" style="text-align:center">
+          <h2 class="section-heading" id="cdH">00</h2>
+      </div>
+      <div class="col-md-3" style="text-align:center">
+          <h2 class="section-heading" id="cdM">00</h2>
+      </div>
+      <div class="col-md-3" style="text-align:center">
+          <h2 class="section-heading" id="cdS">00</h2>
+      </div>
+
+
+
+    <div class="col-md-3" style="text-align:center"> 
+        Days
+    </div>                    
+    <div class="col-md-3" style="text-align:center"> 
+        Hours
+    </div>
+    <div class="col-md-3" style="text-align:center"> 
+        Minutes
+    </div>
+    <div class="col-md-3" style="text-align:center"> 
+        Seconds
+    </div>
+</div>
+
+
+
+  
+    <script>
+      // Change the value of countDownEndDate to the day you want to end the count down
+      var countDownEndDate = "August 9, 2024 13:30:00";
+      
+      var endDate = new Date(countDownEndDate).getTime();
+      
+      var x = setInterval(function() {
+      
+        var timeNow = new Date().getTime();
+      
+        var timeLeft = endDate - timeNow;
+      
+        var days    = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        var hours   = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+  
+        if(days < 10) {
+          days = "0" + days;
+        }
+  
+        if(hours < 10) {
+          hours = "0" + hours;
+        }
+  
+        if(minutes < 10) {
+          minutes = "0" + minutes;
+        }
+  
+        if(seconds < 10) {
+          seconds = "0" + seconds
+        }
+
+
+        if (timeLeft > 0) {
+          document.getElementById("cdD").innerHTML = days;
+          document.getElementById("cdH").innerHTML = hours;
+          document.getElementById("cdM").innerHTML = minutes;
+          document.getElementById("cdS").innerHTML = seconds;
+        }
+      }, 1000);
+    </script>
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <ul class="list-inline text-center">
